@@ -57,13 +57,22 @@
     * Specify the peer network range that you expect to receive return traffic from (should mirror the __Client__ side network)
     * Make sure to remove any additional network subnets that may be defined
 
-#### Example
+#### FortiTester Standalone Mode Examples
 
-![Network Object](./fts_network_object.png "Example Network Object")
+![Network Object](./fts_standalone.png "Standalone Test Mode")
 
 ## Testing Layer 2 Switching Speeds (Frames)
 
 1. 
 
-## Testing Layer 3 Routing/Firewall Speeds (Packets)
+## Testing Layer 3/4 Routing/Firewall Speeds (Packets)
 
+![FortiGate as L4 DUT](./fts_fgt_layer4.png "FortiGate as DUT for Layer 4 Performance Testing")
+
+1. 
+
+## Testing Layer 7 NGFW/Firewall Speeds (Packets)
+
+![FortiGate as L7 DUT](./fts_fgt_layer7.png "FortiGate as DUT for Layer 7 Performance Testing")
+
+1. 
