@@ -23,7 +23,9 @@
 
 ## Create Reusable Objects
 
-### Layer 2 Based Testing
+### Layer 2 Network Object
+
+![Layer 2 Network Object](./images/fts_network2_object.png "Example Layer 2 Network Object")
 
 1. `Performance Testing > Objects > Networks`
 2. Create a new named object
@@ -38,11 +40,9 @@
     * Specify the peer network range that you expect to receive return traffic from (should mirror the __Client__ side network)
     * Make sure to remove any additional network subnets that may be defined
 
-#### Example
+### Layer 3 Network Object
 
-![Network Object](./fts_network_object.png "Example Network Object")
-
-### Layer 3 Based Testing
+![Layer 3 Network Object](./images/fts_network_object.png "Example Layer 3 Network Object")
 
 1. `Performance Testing > Objects > Networks`
 2. Create a new named object
@@ -59,20 +59,38 @@
 
 #### FortiTester Standalone Mode Examples
 
-![Network Object](./fts_standalone.png "Standalone Test Mode")
+![Network Object](./images/fts_standalone.png "Standalone Test Mode")
 
 ## Testing Layer 2 Switching Speeds (Frames)
 
-1. 
+[FTS Admin Guide Section](https://docs.fortinet.com/document/fortitester/7.4.1/administration-guide/703194/starting-an-rfc-2544-throughput-test)
+
+1. `Performance Testing > RFC Benchmark > RFC 2544 > Throughput`
+2. Create a new test and provide a name
+3. Select the layer 2 network object created above
+4. Click Ok
+5. Configure test case options as desired
+    * Important to note that the default test length (__Steady Duration__) is 10 minutes! Adjust as necessary
+6. Click Start to launch the test case
 
 ## Testing Layer 3/4 Routing/Firewall Speeds (Packets)
 
-![FortiGate as L4 DUT](./fts_fgt_layer4.png "FortiGate as DUT for Layer 4 Performance Testing")
+[FTS Admin Guide Section](https://docs.fortinet.com/document/fortitester/7.4.1/administration-guide/817370/starting-an-rfc-3511-ip-throughput-test)
 
-1. 
+_Remember to evaluate (or setup) your Device Under Test appropriately before configuring FortiTester_
+
+![FortiGate as L4 DUT](./images/fts_fgt_layer4.png "FortiGate as DUT for Layer 4 Performance Testing")
+
+1. `Performance Testing > RFC Benchmark > RFC 3511 > IP Throughput`
+2. Create a new test and provide a name
+3. Select the layer 3 network object created above
+4. Click Ok
+5. Configure test case options as desired
+    * Important to note that the default test length (__Steady Duration__) is 10 minutes! Adjust as necessary
+6. Click Start to launch the test case
 
 ## Testing Layer 7 NGFW/Firewall Speeds (Packets)
 
-![FortiGate as L7 DUT](./fts_fgt_layer7.png "FortiGate as DUT for Layer 7 Performance Testing")
+![FortiGate as L7 DUT](./images/fts_fgt_layer7.png "FortiGate as DUT for Layer 7 Performance Testing")
 
 1. 
