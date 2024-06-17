@@ -42,6 +42,8 @@
 
 ### Layer 3 Network Object
 
+For this example, the __DUT Role__ will be set to __Network Gateway__ where the FortiTester will be sending client traffic towards the DUT on one port, and receiving return traffic from the DUT on a separate port, as illustrated in the diagram below:
+
 ![Layer 3 Network Object](./images/fts_network_object.png "Example Layer 3 Network Object")
 
 1. `Performance Testing > Objects > Networks`
