@@ -25,8 +25,9 @@
 
 ### Common Port Settings
 
-![Network Gateway Port Settings Object](./images/fts_port_ng.png "Example of a Network Gateway as DUT)
-![Network Gateway Port Settings Object](./images/fts_port_app.png "Example of an Application Server as DUT)
+![Network Gateway Port Settings Object](./images/fts_port_ng.png "Example of a Network Gateway as DUT")
+
+![Network Gateway Port Settings Object](./images/fts_port_app.png "Example of an Application Server as DUT")
 
 1. `Performance Testing > Objects > Port Settings`
 2. Create a new named object
