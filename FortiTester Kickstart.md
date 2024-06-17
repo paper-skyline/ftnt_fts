@@ -23,12 +23,23 @@
 
 ## Create Reusable Objects
 
+### Common Port Settings
+
+![Network Gateway Port Settings Object](./images/fts_port_ng.png "Example of a Network Gateway as DUT)
+![Network Gateway Port Settings Object](./images/fts_port_app.png "Example of an Application Server as DUT)
+
+1. `Performance Testing > Objects > Port Settings`
+2. Create a new named object
+3. Specify the IP Version, DUT Role, DUT Working Mode, and optional support features
+4. Additional options for network definitions will appear depending on the options selected above.
+
 ### Layer 2 Network Object
 
 ![Layer 2 Network Object](./images/fts_network2_object.png "Example Layer 2 Network Object")
 
 1. `Performance Testing > Objects > Networks`
 2. Create a new named object
+    * You can either select a saved Port Setting Object as created above, or manually specficy network details as follows:
 3. On the __Client__ section:
     * Identify which NIC you want FTS to generate outbound traffic towards the DUT
     * Specify the network range that the FTS Client port will be participating in
@@ -42,7 +53,7 @@
 
 ### Layer 3 Network Object
 
-For this example, the __DUT Role__ will be set to __Network Gateway__ where the FortiTester will be sending client traffic towards the DUT on one port, and receiving return traffic from the DUT on a separate port, as illustrated in the diagram below:
+For this example, the __DUT Role__ will be set to __Network Gateway__ where the FortiTester will be sending client traffic towards the DUT on one port (the Client port), and receiving return traffic from the DUT on a separate port (the Server port), as illustrated in the diagram below. It's a little counter-intuitive, but the __DUT Working Mode__ in this scenario gets set to __NAT__, not because the DUT is performing NAT for the client traffic, but because the return traffic from the DUT will be coming from a different network segment. 
 
 ![Layer 3 Network Object](./images/fts_network_object.png "Example Layer 3 Network Object")
 
