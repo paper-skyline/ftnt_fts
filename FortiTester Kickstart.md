@@ -25,9 +25,11 @@
 
 ### Common Port Settings
 
-![Network Gateway Port Settings Object](./images/fts_port_ng.png "Example of a Network Gateway as DUT")
+![Network Gateway Port Settings Network Gateway Object](./images/fts_port_ng.png "Example of a Network Gateway as DUT")
+_Example settings when the Device Under Test will be a Network Gateway device like a Firewall, NGFW, Router, etc._
 
-![Network Gateway Port Settings Object](./images/fts_port_app.png "Example of an Application Server as DUT")
+![Network Gateway Port Settings Application Server Object](./images/fts_port_app.png "Example of an Application Server as DUT")
+_Example settings when the Device Under Test will be an application server like a web server, DNS server, VPN gateway, etc._
 
 1. `Performance Testing > Objects > Port Settings`
 2. Create a new named object
@@ -40,7 +42,7 @@
 
 1. `Performance Testing > Objects > Networks`
 2. Create a new named object
-    * You can either select a saved Port Setting Object as created above, or manually specficy network details as follows:
+    * _You can either select a saved Port Setting Object as created above, or manually specify network details as follows:_
 3. On the __Client__ section:
     * Identify which NIC you want FTS to generate outbound traffic towards the DUT
     * Specify the network range that the FTS Client port will be participating in
@@ -54,12 +56,11 @@
 
 ### Layer 3 Network Object
 
-For this example, the __DUT Role__ will be set to __Network Gateway__ where the FortiTester will be sending client traffic towards the DUT on one port (the Client port), and receiving return traffic from the DUT on a separate port (the Server port), as illustrated in the diagram below. It's a little counter-intuitive, but the __DUT Working Mode__ in this scenario gets set to __NAT__, not because the DUT is performing NAT for the client traffic, but because the return traffic from the DUT will be coming from a different network segment. 
-
 ![Layer 3 Network Object](./images/fts_network_object.png "Example Layer 3 Network Object")
 
 1. `Performance Testing > Objects > Networks`
 2. Create a new named object
+    * _You can either select a saved Port Setting Object as created above, or manually specify network details as follows:_
 3. On the __Client__ section:
     * Identify which NIC you want FTS to generate outbound traffic towards the DUT
     * Specify the network range that the FTS Client port will be participating in
@@ -89,7 +90,8 @@ For this example, the __DUT Role__ will be set to __Network Gateway__ where the 
 
 ## Testing Layer 3/4 Routing/Firewall Speeds (Packets)
 
-[FTS Admin Guide Section](https://docs.fortinet.com/document/fortitester/7.4.1/administration-guide/817370/starting-an-rfc-3511-ip-throughput-test)
+* [FTS Admin Guide Section on IP Throughput](https://docs.fortinet.com/document/fortitester/7.4.1/administration-guide/817370/starting-an-rfc-3511-ip-throughput-test)
+* [FTS Admin Guide Section on TCP Throughput](https://docs.fortinet.com/document/fortitester/7.4.1/administration-guide/686336/starting-a-tcp-throughput-test)
 
 _Remember to evaluate (or setup) your Device Under Test appropriately before configuring FortiTester_
 
@@ -105,6 +107,8 @@ _Remember to evaluate (or setup) your Device Under Test appropriately before con
 
 ## Testing Layer 7 NGFW/Firewall Speeds (Packets)
 
-![FortiGate as L7 DUT](./images/fts_fgt_layer7.png "FortiGate as DUT for Layer 7 Performance Testing")
+![FortiGate as L7 DUT for Throughput](./images/fts_fgt_layer7.png "FortiGate as DUT for Layer 7 Performance Testing")
+
+* [FTS Admin Guide Section on mix of Enterprise Traffic](https://docs.fortinet.com/document/fortitester/7.4.1/administration-guide/686336/starting-a-tcp-throughput-test)
 
 1. 
