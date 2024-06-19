@@ -29,7 +29,7 @@ Fortinet, like many other cybersecurity and network vendors, provides MIB files 
 
 Performance and security testing can generate __A LOT__ of sessions against a network device as part of its normal processes. Most network devices will eventually age out stale sessions, but the timers may be up to 60 minutes by default in some cases! After concluding a performance or security test, it may make sense to clear the session table automatically. Be mindful that the commands below will clear the __ENTIRE__ session table. Consider filtering that appropriately.
 
-![FTS Script Object](./images/fts_snmp_object.png "Example of a Post-Run Script to Clear FTS Sessions")
+![FTS Script Object](./images/fts_script_object.png "Example of a Post-Run Script to Clear FTS Sessions")
 
 1. `Security/Performance Testing -> Objects -> Scripts`
 2. Create a new named script
