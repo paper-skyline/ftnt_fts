@@ -22,6 +22,10 @@ Fortinet, like many other cybersecurity and network vendors, provides MIB files 
 .1.3.6.1.2.1.47.1.2.1.1.2.1 - Fortinet Model & FortiOS Version
 .1.3.6.1.4.1.12356.101.4.1.3.0 - fgSysCpuUsage - Current CPU Usage
 .1.3.6.1.4.1.12356.101.4.1.4.0 - fgSysMemUsage - Current Memory Utilization
+.1.3.6.1.4.1.12356.101.4.5.3.1.5 -fgProcModProcessorCount
+.1.3.6.1.4.1.12356.101.4.5.3.1.6 - fgProcModMemCapacity
+.1.3.6.1.4.1.12356.101.4.1.36 - .fgSysFreeMemUsage - Free Memory Utilization (may only be a v7.4.4)
+.1.3.6.1.4.1.12356.101.4.1.37 - .fgSysFreeableMemUsage - Freeable Memory Utilization (may only be a v7.4.4)
 .1.3.6.1.4.1.12356.101.4.1.8.0 - fgSysSesCount - Current Session Count
 ```
 
