@@ -107,8 +107,15 @@ _Remember to evaluate (or setup) your Device Under Test appropriately before con
 
 ## Testing Layer 7 NGFW/Firewall Speeds (Packets)
 
-![FortiGate as L7 DUT for Throughput](./images/fts_fgt_layer7.png "FortiGate as DUT for Layer 7 Performance Testing")
+![FortiGate as L7 DUT for Throughput](./images/fts_layer7.png "FortiGate as DUT for Layer 7 Performance Testing")
 
-* [FTS Admin Guide Section on mix of Enterprise Traffic](https://docs.fortinet.com/document/fortitester/7.4.1/administration-guide/686336/starting-a-tcp-throughput-test)
+* [FTS Admin Guide Section on mix of Enterprise Traffic](https://docs.fortinet.com/document/fortitester/7.4.1/administration-guide/277268/starting-a-mixed-traffic-test)
 
-1. 
+1. `Performance Testing > Mixed Traffic`
+2. Create a new test
+3. Select options for Traffic Mix, a pre-defined Traffic Template like Enterprise Lite or Enterprise, DUT Role, and Network Config
+4. Specify the Upper Bandwidth Limit for the test and click Apply and then Ok
+5. On the next screen, name the test, configure the test duration, and any scripts and/or DUT Monitors as needed
+    * Verify the network settings as applied from the previous page
+    * Adjust any specifics for Client side or Server side generated traffic, like MTU, MSS, etc.
+6. When ready to launch the test, click Start
