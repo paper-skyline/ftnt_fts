@@ -101,14 +101,21 @@ FortiTester can do some _really_ practical and useful tests that I wish more peo
 
 _FortiTester simulates the actions that a real adversary would do on the clients' systems. It features a Remote Access Tool (RAT) that performs adversary actions on infected hosts and copies itself over the whole network to increase its foothold._
 
-## Disclaimer
+## Examples
 
-__*Use at your own risk*__
-
-These example configurations were a learning tool for me to figure out what works for what I was trying to do, what didn't work, and maybe even a little bit as to why. I make no claims that this is the best way, or even the correct way, to configure devices utilizing this technology. What worked for me in a certain situation may not work for you, etc. I encourage you to take the time to learn and try these things out yourself and make your own judgments.
+1. [FortiTester Kickstart with L2 & L3 RFC tests](./FortiTester%20Kickstart.md)
+2. [FortiTester Test Center with Application test](./FortiTester%20Test%20Center.md)
+3. [Incorporating Device Under Test (DUT) Monitoring](./Monitoring%20DUT%20-%20Scripting.md)
+4. [IPerf Functionality on FortiGates](./IPerf3%20on%20FortiGate.md)
 
 ## Resources
 
 * [Fortinet FortiTester](https://www.fortinet.com/products/fortitester)
 * [FortiTester Datasheet](https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiTester.pdf)
 * [FortiTester Documents](https://docs.fortinet.com/product/fortitester/)
+
+## Disclaimer
+
+__*Use at your own risk*__
+
+These example configurations were a learning tool for me to figure out what works for what I was trying to do, what didn't work, and maybe even a little bit as to why. I make no claims that this is the best way, or even the correct way, to configure devices utilizing this technology. What worked for me in a certain situation may not work for you, etc. I encourage you to take the time to learn and try these things out yourself and make your own judgments.
